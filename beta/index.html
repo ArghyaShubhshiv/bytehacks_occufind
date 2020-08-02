@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Occufind</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navButton">
+          <a href="#">Occufind</a>
+        </div>
+        <div class="navButton">
+          <a href="#search">Search for Jobs</a>
+        </div>
+        <div class="navButton">
+          <a href="#postJob">Post a job</a>
+        </div>
+        <div class="navButton">
+          <a href="#your_applications">Your Applications</a>
+        </div>
+        <div class="navButton">
+          <a href="#all_applicants">All Applicants</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h3 id="search">Search for jobs</h3>
+      <form action="#">
+        <select name="title" id="title">
+          <option value="title">Search via Title</option>
+        </select>
+        <select name="title" id="title">
+          <option value="criteria">Search via Title</option>
+        </select>
+        <button>Enter</button>
+      </form>
+
+      <h3 id="postJob">Post a job offer</h3>
+      <form id="jobOffer" action="#" method="post">
+        <label for="title"
+          >Type in your job title <input type="text" name="title"
+        /></label>
+        <label for="description"
+          >Type in your job description <input type="text" name="description"
+        /></label>
+        <label for="criteria"
+          >Type in your job criteria <input type="text" name="criteria"
+        /></label>
+        <div class="buttons"><button>Submit</button></div>
+      </form>
+      <form action="#">
+        <button>Log out</button>
+      </form>
+
+      <h3 id="jobs">Posted Jobs</h3>
+      <ul>
+        <li>
+          <div class="jobCard">
+            <div class="jobTitle"><b>Job Title</b></div>
+            <div class="jobDescription">
+              <b>Description: </b>Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Amet culpa quas ab inventore laudantium
+              dignissimos, at, ullam minima dolores velit sapiente sunt iure
+              enim et vitae non quod, aspernatur beatae.
+            </div>
+            <div class="jobCriteria">
+              <b>Criteria: </b>Should know basic carpentary
+            </div>
+            <button class="apply">Apply!</button>
+          </div>
+        </li>
+      </ul>
+
+      <h3 id="your_applications">Your applications</h3>
+      <ul>
+        <li>NAME EMAIL TITLE</li>
+      </ul>
+
+      <h3 id="all_applicants">All Applicants</h3>
+      <ul>
+        <li>NAME EMAIL TITLE</li>
+      </ul>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
