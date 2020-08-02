@@ -1,0 +1,121 @@
+/* The below code is for setting the stage*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-bottom: 25px;
+}
+main {
+  margin-top: 50px;
+  padding-left: 15em;
+  padding-right: 15em;
+}
+
+/* The below code is for <form> elements */
+ul {
+  list-style: none;
+}
+select {
+  width: 250px;
+  display: inline-block;
+  margin: 0 auto;
+  margin: 15px;
+  border-radius: 20px;
+  padding: 3px 15px;
+  outline: none;
+}
+label {
+  display: block;
+}
+input {
+  margin-left: 12px;
+}
+#jobOffer {
+  text-align: center;
+}
+.buttons {
+  text-align: center;
+}
+button {
+  border-radius: 20px;
+  padding: 3px 15px;
+  margin-top: 10px;
+}
+button:hover {
+  box-shadow: 1px 5px rgba(0, 0, 0, 25%);
+}
+
+/* The below code is for styling the Job Cards*/
+.jobCard {
+  padding: 15px;
+  border: 2px solid #000000;
+  margin: 25px;
+}
+.jobTitle,
+.jobDescription,
+.jobCriteria {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* The below code is for the navbar*/
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+nav {
+  display: grid;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 4rem;
+  color: white;
+  background-color: #8e72ad;
+  text-decoration: none;
+}
+div {
+  margin: 2px;
+}
+nav > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 5%;
+}
+nav a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav a:hover,
+nav a:focus {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media (min-width: 570px) {
+  nav {
+    grid-template-columns: 1fr auto auto auto auto;
+    justify-items: start;
+    padding: 2px;
+  }
+  nav a,
+  nav div {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+  }
+}
